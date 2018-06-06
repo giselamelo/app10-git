@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto Final</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-appProyectoFinal.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--grupo javaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src="js/acciones.js"></script-->
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/html2.jpg','imagenes/dream2.jpg','imagenes/wamp2.jpg','imagenes/js2.jpg','imagenes/php2.jpg','imagenes/php funciones.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>TUTORIAL DAW</h1>
+   </div>
+<div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Desarrolla Aplicaciones Web</h1>
+   <div>
+    <br>
+    </div>
+    <div>
+     <img src="imagenes/app web.jpg" width="50%"height="50%">
+    </div>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+  <h1>Pagina web</h1>
+   <div>
+    <br>
+    </div>
+    <div>
+     <img src="imagenes/pagina web.jpg" width="50%"height="50%">
+    </div>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+  <h1>Internet</h1>
+   <div>
+    <br>
+    </div>
+    <div>
+     <img src="imagenes/internet.jpg" width="50%"height="50%">
+    </div>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+  <h1>Tecnologias informaticas</h1>
+   <div>
+    <br>
+    </div>
+    <div>
+     <img src="imagenes/tecnologias.jpg" width="50%"height="50%">
+    </div>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+  <h1>Programacion</h1>
+   <div>
+    <br>
+    </div>
+    <div>
+     <img src="imagenes/programacion.jpg" width="50%"height="50%">
+    </div>
+   </div>
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Web y Funcionamiento de Internet</h2>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>HTML</h2>
+     <p>Elementos Basicos</p>
+     </a>
+   </li> 
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>HTML5</h2>
+     <p>Elementos de Bloque, Elementos de Formulario, Elementos Semánticos</p>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CSS</h2>
+     <p>Reglas de Estilo, Estilos en línea, Interno, Externo Id y Clases</p>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Dreamweaver CS6</h2>
+     </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>WAMP</h2>
+     </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>JS</h2>
+     </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>PHP</h2>
+     <p>Introduccion</p>
+     </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>PHP</h2>
+     <p>Variables, Funciones, Separando de HTML</p>
+     </a>
+    </li>
+      <li class="ui-first-child ui-last-child">
+    <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>MySQL</h2>
+     <p>Introduccion Diseño y Creacion de Base de Datos</p>
+     </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Datos del desarrollador</h2>
+     <p>nombre alumno, grupo, semestre, submodulo, nombre del docente</p>
+     </a>
+   </li>
+    </ul>
+    <div style="width:40;" align="center">
+    <ul data-role="controlgroup" data-type="horizontal" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://desarrolloweb.com/articulos/332.php" data-role="button" data-theme="b" target="_self">
+       <h2>MÁS INFORMACIÓN DE DREAMWEAVER CS6</h2>
+      </a>
+      </li>
+     </ul>
+   </div>
+   
+   <div style="width:40;" align="center">
+    <ul data-role="controlgroup" data-type="horizontal" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://definicion.de/html/" data-role="button" data-theme="b" target="_self">
+       <h2>MÁS INFORMACIÓN DE HTML</h2>
+      </a>
+      </li>
+     </ul>
+   </div>
+   
+   <div style="width:40;" align="center">
+    <ul data-role="controlgroup" data-type="horizontal" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://definicion.de/css/" data-role="button" data-theme="b" target="_self">
+       <h2>MÁS INFORMACIÓN DE CSS</h2>
+      </a>
+      </li>
+     </ul>
+   </div>
+   
+   <div style="width:40;" align="center">
+    <ul data-role="controlgroup" data-type="horizontal" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.maestrosdelweb.com/que-es-javascript/" data-role="button" data-theme="b" target="_self">
+       <h2>MÁS INFORMACIÓN DE JS</h2>
+      </a>
+      </li>
+     </ul>
+   </div>
+   
+   <div style="width:40;" align="center">
+    <ul data-role="controlgroup" data-type="horizontal" data-theme="b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.maestrosdelweb.com/phpintro/" data-role="button" data-theme="b" target="_self">
+       <h2>MÁS INFORMACIÓN DE PHP</h2>
+      </a>
+      </li>
+     </ul>
+   </div>
+   
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46"height="46">
+     </div>
+     <div>
+      <h4>Proyecto Final</h4>
+      <h4>Gisela Nayeli Melo Herrera</h4>
+     </div>
+    </div>
+   </div>
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Web y funcionamiento de internet</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2>Los clientes son dispositivos de los usuarios conectados a Internet (por ejemplo, tu ordenador conectado a la red Wi-Fi o el telefono conectado a la red de telefonia movil) y el software que se encuentra disponible y permite acceder a Internet en dichos dispositivo. Los servidores son computadoras que almacenan paginas web, sitios o aplicaciones.Cuando un dispositivo cliente quiere acceder a una pagina web, una copia de la pagina web se descarga desde el servidor en el equipo cliente y se mostrara en el navegador web del usuario; el navegador va al servidor DNS y encuentra la dirección real del servidor donde el sitio web vive, el navegador envía un mensaje de petición HTTP al servidor, pidiendole que envie una copia de la pagina web para el cliente este mensaje y todos los datos enviados entre el cliente y el servidor, se envian a traves de tu conexion a Internet usando TCP/IPEl navegador reune los pequeños trozos, forma un sitio web completo y te lo muestra.</h2>
+     <img src="imagenes/app web.jpg" width="50%" height="50%">
+     <img src="imagenes/app web2.jpg" width="50%" height="50%">
+     <img src="imagenes/app web3.jpg" width="50%" height="50%">
+     </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+    </div>
+   </div>
+
+
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>HTML</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>¿ Cuáles son los elementos más importantes del encabezamiento? Son TITLE y META, como el siguiente: 
+<li> < TITLE>Título de la página</TITLE> </li>
+<li> < META NAME="description" CONTENT="Página web orientada al diseño de páginas web de calidad para internet con lenguaje HTML y contenido hipermedia"> </li>
+<li> <META NAME="keywords" CONTENT="Diseño paginas web HTML internet"> </li>
+<li> < META HTTP-EQUIV="refresh" CONTENT="5; URL=http://www.tudominio.com/eso.html"> </li>
+<li> < META name="robots" CONTENT="follow"> </li><br>¿Que contenidos tiene el cuerpo o body?
+El cuerpo lo ponemos dentro de la etiqueta <body>, viene a continuacion del encabezamiento, y contiene todo el texto e informacion del documento que se va a mostrar.<br>¿ Que son los titulares?
+Los titulares son aquello que define al titulo de un parrafo y se define con la etiqueta <hx> siendo la x el número de titular. Segun el tipo de titular que sea tiene un formato u otro, pero todos ellos con una misma funcion. Unos titulares se diferencian de otro por su nivel de importancia, siendo el h1 el mas importante y el h6 el menos importante.<br>¿Que son las listas?
+Existen dos tipos de listas: la lista de definiciones o glosario y las listas regulares, que pueden ser numeradas o sin numerar.</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/html2.jpg',1)"><img src="imagenes/html1.jpg" width="650" height="366" id="Image22"></a> 
+     </div>
+   </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div> 
+      <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+     </div>
+     </div>
+
+
+      <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>HTML5</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>El elemento INPUT tiene nuevos valores para el atributo type, Search: El elemento representa una caja de busqueda. Los saltos de linea son quitados del valor ingresado pero no se modifica ninguna otra sintaxis.<br>tel: El elemento representa un control para editar un número de telefono, porque los numeros telefonicos varian ampliamente en el mundo. Puedes usar atributos como pattern y maxlength para restringir los valores ingresados en la caja.<br> url: El elemento representa un control para editar una URL. Se quitan los saltos de linea y espacios en blanco antes y despues del valor ingresados.<br> email: El elemento representa una direccion de correo electronico. Los saltos de linea se quitan automaticamente del valor ingresado. Puede ingresarse una direccion de correo no valida, pero el campo de ingreso sólo funcionara si la direccion.<br> El elemento FORM tiene un nuevo atributo; novalidate: Este atributo previene que el formulario sea validado antes del envio. Puedes usar el atributo list en un elemento INPUT para enlazar a un campo de ingreso especifico con un elemento datalist determinado.</h2>
+      </div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/html51.jpg" alt="html51" title="html51" id="wows1_0"/></li>
+		<li><img src="data1/images/html52.jpg" alt="html52" title="html52" id="wows1_1"/></li>
+		<li><img src="data1/images/html53.jpg" alt="html53" title="html53" id="wows1_2"/></li>
+		<li><img src="data1/images/html56.jpg" alt="html56" title="html56" id="wows1_3"/></li>
+		<li><img src="data1/images/html54.jpg" alt="html54" title="html54" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/html55.jpg" alt="wowslider.com" title="html55" id="wows1_5"/></a></li>
+		<li><img src="data1/images/html57.jpg" alt="html57" title="html57" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="html51"><span><img src="data1/tooltips/html51.jpg" alt="html51"/>1</span></a>
+		<a href="#" title="html52"><span><img src="data1/tooltips/html52.jpg" alt="html52"/>2</span></a>
+		<a href="#" title="html53"><span><img src="data1/tooltips/html53.jpg" alt="html53"/>3</span></a>
+		<a href="#" title="html56"><span><img src="data1/tooltips/html56.jpg" alt="html56"/>4</span></a>
+		<a href="#" title="html54"><span><img src="data1/tooltips/html54.jpg" alt="html54"/>5</span></a>
+		<a href="#" title="html55"><span><img src="data1/tooltips/html55.jpg" alt="html55"/>6</span></a>
+		<a href="#" title="html57"><span><img src="data1/tooltips/html57.jpg" alt="html57"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div> 
+      <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+     </div>
+     </div>
+      
+      
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CSS</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>Selectores,es el elemento que esta conectado a un estilo particular. Por ejemplo, el selector en:
+P { text-indent: 3em }
+es P.<br> Los selectores ID son asignados individualmente con el proposito de una definicion en terminos por elemento. Este tipo de selector deberia ser usado con moderacion debido a sus inherentes limitaciones. Un selector ID se asigna mediante el uso del indicador "#" para preceder un nombre. Los selectores de contexto son simples cadenas de dos o mas selectores simples separados por espacio en blanco. A estos selectores se les pueden asignar propiedades normales y, debido a las reglas del orden de cascada, tendran precedencia sobre selectores simples. Por ejemplo, el selector de contexto en:P EM { background: yellow }<br> Se asigna una propiedad a un selector a fin de manipular su estilo. Ejemplos de propiedades incluyen color, margin, y font.<br> </h2>
+   <div>
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/css1.jpg" alt="css1" title="css1" id="wows1_0"/></li>
+		<li><img src="data1/images/css2.jpg" alt="css2" title="css2" id="wows1_1"/></li>
+		<li><img src="data1/images/css3.jpg" alt="css3" title="css3" id="wows1_2"/></li>
+		<li><img src="data1/images/css4.jpg" alt="css4" title="css4" id="wows1_3"/></li>
+		<li><img src="data1/images/css5.jpg" alt="css5" title="css5" id="wows1_4"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/css6.jpg" alt="jquery slideshow" title="css6" id="wows1_5"/></a></li>
+		<li><img src="data1/images/css7.jpg" alt="css7" title="css7" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="css1"><span><img src="data1/tooltips/css1.jpg" alt="css1"/>1</span></a>
+		<a href="#" title="css2"><span><img src="data1/tooltips/css2.jpg" alt="css2"/>2</span></a>
+		<a href="#" title="css3"><span><img src="data1/tooltips/css3.jpg" alt="css3"/>3</span></a>
+		<a href="#" title="css4"><span><img src="data1/tooltips/css4.jpg" alt="css4"/>4</span></a>
+		<a href="#" title="css5"><span><img src="data1/tooltips/css5.jpg" alt="css5"/>5</span></a>
+		<a href="#" title="css6"><span><img src="data1/tooltips/css6.jpg" alt="css6"/>6</span></a>
+		<a href="#" title="css7"><span><img src="data1/tooltips/css7.jpg" alt="css7"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div> 
+    <img src="res/android/mdpi.png" width="46"height="46">
+     </div>
+      <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+    </div>
+    </div>
+    </div>
+
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Dreamweaver CS6</h1>
+     </div>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>Adobe Dreamweaver es una aplicacion en programa de estudio (basada en la forma de estudio de Adobe Flash) que esta destinada a la construccion, diseño y edicion de sitios, videos y aplicaciones Web basados en estandares. Creado inicialmente por Macromedia (actualmente producido por Adobe Systems) es uno de los programas mas utilizados en el sector del diseño y la programacion web por sus funcionalidades, su integracion con otras herramientas como Adobe Flash y, recientemente, por su soporte de los estandares del World Wide Web Consortium. Las letras CS significan Creative Suite.La gran ventaja de este editor sobre otros es su gran poder de ampliacion y personalizacion, puesto que en este programa sus rutinas estan hechas en Javascript-C, lo que le ofrece una gran flexibilidad en estas materias. Esto hace que los archivos del programa no sean instrucciones de C++ sino rutinas de Javascript que hace que sea un programa muy fluido y todo ello permite que programadores y editores web hagan extensiones para su programa y lo pongan a su gusto.</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/dream2.jpg',1)"><img src="imagenes/dream1.jpg" width="470" height="470" id="Image23"></a>
+       </div>
+       </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div> 
+      <img src="res/android/mdpi.png" width="46"height="46">
+     </div>
+      <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+    </div>
+    </div>  
+    
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>WAMP</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2> Esta herramienta incluye ademas con un administrador de base de datos PHPMyAdmin con el cual podremos crear una nueva base de datos e ingresar la data de las tablas creadas en ella, realizar consultas y generar scripts SQL, como exportar e importar scripts de base de datos. WampServer ofrece a los desarrolladores herramientas necesarias para realizar aplicaciones web de manera local, con un sistema operativo (Windows), un manejador de base de datos (MySQL), un software de programación script web PHP. Se caracteriza porque puede ser usado de forma libre es decir no debemos de contar con alguna licencia el cual nos permita el uso de la misma, ya que pertenece a la corriente de "open source". </h2>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/wamp2.jpg',1)"><img src="imagenes/wamp1.jpg" width="580" height="334" id="Image24"></a> 
+     </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+    </div>
+   </div>
+   
+   <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>JavaScript</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2> Javascript es una especie de lenguaje de programacion ligera, interpretado por la mayoria de los navegadores y que les proporciona a las paginas web, efectos y funciones complementarias a las consideradas como estandar HTML Este tipo de lenguaje de programación, con frecuencia son empleados en los sitios web, para realizar acciones en el lado del cliente, estando centrado en el codigo fuente de la pagina web javascript fue creado por la compañia de software “Netscape Corporation” para que fuese colocado en su navegador 2.0 y que gracias a su simplicidad, aun continua siendo una de las herramientas de gran utilidad, para la creación de paginas web que posean algo más que texto.</h2>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imag','','imagenes/js2.jpg',1)"><img src="imagenes/js1.jpg" width="494" height="352" id="imag"></a> </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+     </div>
+   </div>
+     
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>PHP Introduccion</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2>Es un lenguaje de codigo abierto muy popular, adecuado para desarrollo web y que puede ser incrustado en HTML, es popular porque un gran numero de paginas y portales web estan creadas con PHP. Codigo abierto significa que es de uso libre y gratuito para todos los programadores que quieran usarlo; incrustado en HTML significa que en un mismo archivo vamos a poder combinar codigo PHP con codigo HTML, siguiendo unas reglas; se utiliza para generar paginas web dinamicas.</h2>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('php','','imagenes/php2.jpg',1)"><img src="imagenes/php1.jpg" width="728" height="475" id="php"></a></div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+    </div>
+   </div>
+   
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>PHP Variables, Funciones, Separando de HTML</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2>Funciones variables<br>PHP admite el concepto de funciones variables. Esto significa que si un nombre de variable tiene paréntesis anexos a él, PHP buscará una función con el mismo nombre que lo evaluado por la variable, e intentará ejecutarla. Entre otras cosas, esto se puede usar para implementar llamadas de retorno, tablas de funciones, y así sucesivamente.<br>Es obligatorio que el nombre de una variable se inicie con el caracter $, siendo este el que le indica a PHP que estamos creando una variable. Tras el $, es obligatorio el uso de una letra o del simbolo _ (subrayado o guión bajo), los siguientes pueden ser letras, guiones bajos o números. Las funciones variables no funcionarán con constructores de lenguaje como echo, print, unset(), isset(), empty(), include, require y similares. Utilice funciones de envoltura para hacer uso de cualquiera de estos constructores como funciones variables.</h2>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/php funciones.jpg',1)"><img src="imagenes/php variable.jpg" width="728" height="409" id="Image27"></a> 
+     </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+     </div>
+   </div>
+     
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>MySQL</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2>MySQL es un sistema de administracion de bases de datos (Database Management System, DBMS) para bases de datos relacionales. Así, MySQL no es mas que una aplicacion que permite gestionar archivos llamados de bases de datos. como base de datos relacional, utiliza multiples tablas para almacenar y organizar la informacion. MySQL fue escrito en C y C++ y destaca por su gran adaptacion a diferentes entornos de desarrollo, permitiendo su interactuacion con los lenguajes de programacion mas utilizados como PHP, Perl y Java y su integracion en distintos sistemas operativos.</h2>
+     <img src="imagenes/mysql1.jpg" width="50%"height="50%">
+     </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+     
+     <div data-role="page" id="Pagina11" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Datos del desarrollador</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h2>Gisela Nayeli Melo Herrera<br> 4° Semestre<br> Grupo:F<br> Desarrolla Aplicaciones Moviles(DAM)<br>Jose    Antonio Gomez Hernandez<br></h2>
+     </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> 
+     <img src="res/android/mdpi.png" width="46"height="46">
+    </div>
+     <h4>Proyecto Final,Gisela Nayeli Melo Herrera</h4>
+     </div>
+   </div>
+</body>
+</html>
